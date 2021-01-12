@@ -342,5 +342,6 @@ span[data-type="tag"]:hover span:nth-child(2) {
 }
 .layout__empty.b3-list.b3-list--text .b3-list-item.b3-list-item--big:hover {
     color: var(--Watermelon-highLight-color);
-    font-size: 1.2em;
+    font-size: 18px;
+    font-weight: normal;
 }
