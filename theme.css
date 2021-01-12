@@ -1,0 +1,346 @@
+:root {
+    /* 主色 */
+    --b3-theme-primary: var(--Watermelon-highLight-color);
+    --b3-theme-primary-light: rgba(66, 133, 244, 0.54);
+    --b3-theme-primary-lighter: rgba(66, 133, 244, 0.38);
+    --b3-theme-primary-lightest: rgba(66, 133, 244, 0.12);
+    --b3-theme-secondary: var(--Watermelon-highLight-color);
+    --b3-theme-background: var(--Watermelon-main-color);
+    --b3-theme-surface: var(--Watermelon-main-color);
+    --b3-theme-error: #d23f31;
+
+
+    /* 文字颜色 */
+    --b3-theme-on-primary: #fff;
+    --b3-theme-on-secondary: #fff;
+    --b3-theme-on-background: #202124;
+    --b3-theme-on-surface: #5f6368;
+    --b3-theme-on-error: #fff;
+
+    /* 字体 */
+    --b3-font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", "Hiragino Sans GB", "Microsoft Yahei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
+    --b3-font-family-code: mononoki, Consolas, "Liberation Mono", Menlo, Courier, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
+
+    /* 线条 */
+    --b3-border-color: rgba(0, 0, 0, .12);
+
+    /* 滚动条 */
+    --b3-scroll-color: var(--Watermelon-Immersive-color);
+
+    /* 列表 */
+    --b3-list-hover: rgba(0, 0, 0, .06);
+
+    /* 页签 */
+    --b3-tab-background: var(--Watermelon-main-color);
+    --b3-tab-background-hover: var(--Watermelon-tab-background-hover);
+
+    /* 提示 */
+    --b3-tooltips-color: var(--Watermelon-prompt-color);
+
+    /* 动画效果 */
+    --b3-transition: all .15s cubic-bezier(0, 0, .2, 1) 0ms;
+
+    /* 阴影 */
+    --b3-point-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    --b3-dialog-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.4);
+
+    /* diff */
+    --b3-diff-add: #dfd;
+    --b3-diff-add-surface: #97f295;
+    --b3-diff-del: #fee8e9;
+    --b3-diff-del-surface: #ffb6ba;
+
+    /* 图表颜色 */
+    --b3-graph-point: #202124;
+    --b3-graph-line: #5f6368;
+    --b3-graph-hl-point: #f3a92f;
+    --b3-graph-hl-line: #d23f31;
+
+    /* 编辑器工具栏高度 */
+    --b3-vditor-toolbar-height: 29px;
+    --b3-vditor-toolbar-height-space: 6px;
+
+    /* 编辑器搜索颜色 */
+    --b3-vditor-search-background: #ffe955;
+    --b3-vditor-search-border-color: #f2e680;
+    --b3-vditor-search-current-background: #a5d3fe;
+
+    /* 代码片段背景 */
+    --b3-vditor-code-background: var(--Watermelon-codeBlock-color);
+
+    /* 即时渲染标记符颜色 */
+    --b3-vditor-mark-heading-color: #660e7a;
+    --b3-vditor-mark-title-color: #808080;
+    --b3-vditor-mark-em-color: #0033b3;
+    --b3-vditor-mark-strong-color: #0033b3;
+    --b3-vditor-mark-backslash-color: #0033b3;
+    --b3-vditor-mark-s-color: #5f6368;
+    --b3-vditor-mark-mark-color: #5f6368;
+    --b3-vditor-mark-link-color: #008000;
+    --b3-vditor-mark-bracket-color: #0000ff;
+    --b3-vditor-mark-paren-color: #008000;
+    --b3-vditor-mark-block-color: #660e7a;
+    --b3-vditor-mark-tag-color: #0033b3;
+
+    /* 即时渲染行内元素颜色 */
+    --b3-vditor-inline-strong-color: #202124;
+    --b3-vditor-inline-em-color: #202124;
+    --b3-vditor-inline-s-color: #202124;
+    --b3-vditor-inline-link-color: #4285f4;
+    --b3-vditor-inline-mark-background: #ffe955;
+    --b3-vditor-inline-mark-color: #202124;
+    --b3-vditor-inline-tag-color: #5f6368;
+    --b3-vditor-inline-blockref-color: #660e7a;
+
+    /* Watermelon Config*/
+    --Watermelon-main-color: #c6eccb;
+    --Watermelon-highLight-color: #E35E69;
+    --Watermelon-h-highLight-color: #008EC6;
+    --Watermelon-h-underline-highLight-color: #99B6D4;
+    --Watermelon-block-border-color: #484f49; 
+    --Watermelon-prompt-color: var(--Watermelon-highLight-color);
+    --Watermelon-codeBlock-color-input: #BBB5DF;
+    /* 404A4B 483C30 */
+    --Watermelon-codeBlock-color: #cad7de;
+    --Watermelon-table-border-color: var(--Watermelon-block-border-color);
+    --Watermelon-table-head-color: #BBB5DF;
+    --Watermelon-table-body-color: #cad7de;
+    --Watermelon-tab-background-hover: #63766640;
+    --Watermelon-close-color: #ffffff;
+    --Watermelon-blockquote-color: #aecfb2;
+    --Watermelon-Immersive-color: #9dd7a5;
+    
+    /* Watermelon blockFocus */
+    --b3-card-error-background: #94443A;
+    --b3-card-error-color: #DADCDB;
+    --b3-card-warning-background: #002b36;
+    --b3-card-warning-color: #DADCDB;
+    --b3-card-info-background: #156F9B;
+    --b3-card-info-color: #DADCDB;
+    --b3-card-success-background: #A57B6E;
+    --b3-card-success-color: #DADCDB;
+}
+
+.language-graphviz polygon {
+    fill: var(--b3-theme-on-surface);
+}
+
+/* Lavender Custom */
+
+/* h */
+.vditor-ir h1, .vditor-ir h2, .vditor-ir h3, .vditor-ir h4, .vditor-ir h5, .vditor-ir h6 {
+    color: var(--Watermelon-h-highLight-color);
+    border-bottom-color: var(--Watermelon-h-underline-highLight-color);
+}
+
+/* codeBlock */
+.vditor-ir__marker--pre.vditor-ir__marker code {
+    background-color: var(--Watermelon-codeBlock-color-input);
+}
+.vditor-ir__preview code {
+    background-color: var(--Watermelon-codeBlock-color);
+}
+
+/* List */
+.vditor ul, .vditor ol {
+    padding-left: 1.5em;
+}
+.vditor ul li {
+    list-style-type: disc !important;
+    margin-left: 1em;
+}
+.vditor ol li {
+    margin-left: 1em;
+}
+.vditor ul ol, .vditor ol ol, .vditor ul ul, .vditor ol ul {
+    border-left: .1em solid var(--Watermelon-h-underline-highLight-color);
+}
+.vditor ul ol, .vditor ol ol {
+    margin-left: -.8em !important;
+}
+@media screen and (max-width: 1280px) {
+    .vditor ul ul, .vditor ol ul {
+        margin-left: -.825em !important;
+    }
+}
+@media screen and (min-width: 1281px) {
+    .vditor ul ul, .vditor ol ul {
+        margin-left: -.95em !important;
+    }
+}
+
+/* blockRef */
+.block__popover, .vditor-ir div[data-type="block-ref-embed"]>div[data-render], .vditor-ir div[data-type="block-query-embed"]>div[data-render] {
+    border: 1.35px solid var(--Watermelon-block-border-color);
+    border-radius: 0; 
+}
+
+/* table */
+.vditor-reset table thead tr {
+    background-color: var(--Watermelon-table-head-color) !important;
+}
+.vditor-reset table tbody tr {
+    background-color: var(--Watermelon-table-body-color) !important;
+}
+
+/* unifiedColor */
+
+/* 对统计字数的优化 */
+.vditor-counter.b3-tooltips.b3-tooltips__w,
+/* 对定位打开的文件、排序的优化 */
+.b3-list__header span:hover,
+/* 对工具栏的美化 */
+.vditor-toolbar .vditor-toolbar__item button:hover svg,
+/* 顶栏美化 */
+#toolbar div:hover, .ft__primary:hover,
+/* 标签美化,增强了阅读性 */
+.vditor-ir__tag,
+/* 美化块引用右上角的可点击项的颜色 */
+.block__icon.b3-tooltips.b3-tooltips__sw:hover
+{
+    color: var(--Watermelon-highLight-color);
+}
+
+/* 对关闭图标样式的美化 */
+.fn__flex.layout-tab-bar .item svg:hover,
+.b3-dialog__container svg:hover, .b3-snackbar__close.fn__a:hover {
+    color: var(--b3-card-error-background);
+}
+
+/* 页签和列表的Hover颜色统一 */
+.b3-list-item.b3-list-item--two:hover
+.b3-list.b3-list--background.file-tree,
+.b3-list-item:hover {
+    background-color: var(--Watermelon-tab-background-hover) !important;
+    /* box-shadow: 0 1px 1px var(--Watermelon-highLight-color),
+    0 -1px 1px var(--Watermelon-highLight-color); */
+}
+
+/* 对关闭图标的美化 -- 背景色 */
+.fn__flex.layout-tab-bar .item svg:hover {
+    background-color: var(--Watermelon-highLight-color);
+    color: var(--Watermelon-close-color);
+}
+
+/* transition */
+
+/* 设置及开始界面 */
+.b3-list-item.b3-list-item--big,
+/* 列表选中动效 */
+.b3-list-item.b3-list-item--hide-action, 
+.b3-list--background .b3-list-item--focus, 
+.b3-list-item.b3-list-item--focus,
+.b3-list-item,
+.b3-list-item.b3-list-item--two,
+/* 对右侧、下侧打开的优化 */
+.block__icon svg, .b3-list-item.b3-list-item--hide-action span,
+/* 对input框的优化 */
+.b3-text-filed.fn__block, .b3-text-filed.fn__flex-center.fn__size200,
+/* 对标签页的优化 */
+.fn__flex.layout-tab-bar .item,
+/* 对关闭图标的美化 */
+.b3-dialog__container svg, .b3-snackbar__close.fn__a,
+/* 对工具栏的美化 */
+.vditor-toolbar .vditor-toolbar__item button svg,
+/* 顶栏美化 */
+#toolbar div, .ft__primary,
+/* 标签 */
+span[data-type="tag"] span:nth-child(2)
+{
+    transition: all .3s linear;
+}
+
+/* 对部分自定义样式根据实际需要做的区别化覆盖 */
+
+/* 开始页面的列表不需要背景色 */
+.b3-list-item.b3-list-item--big {
+    background-color: transparent !important;
+}
+/* 设置界面的svg和文字统一动效 */
+.b3-list-item.b3-list-item--big svg {
+    transition: none;
+}
+/* 标签页的文件图标不需要有hover样式 */
+.fn__flex.layout-tab-bar .item .item__graphic:hover {
+    background-color: transparent;
+}
+.fn__flex.layout-tab-bar .item .item__graphic use {
+    color: var(--b3-theme-on-background) !important;
+}
+/* 设置界面因关闭图标美化而导致的样式变动 */
+.b3-list-item.b3-list-item--big svg {
+    transition: none;
+}
+.b3-list-item.b3-list-item--big svg {
+    transform: none;
+    color: var(--b3-theme-on-background);
+}
+
+
+/* 美化引用 */
+blockquote {
+    border-left: 0.3em solid var(--Watermelon-block-border-color) !important;
+    background-color: var(--Watermelon-blockquote-color);
+    padding: 0.5em 1em !important;
+}
+blockquote p {
+    color: var(--Watermelon-block-border-color) !important;
+}
+
+/* 加深折叠后的块颜色 */
+*[fold="1"] {
+    color: var(--Watermelon-block-border-color) !important;
+}
+
+/* Tags */
+span[data-type="tag"] span:nth-child(2) {
+    display: inline-block;
+    font-size: .8em;
+    background-color: var(--Watermelon-highLight-color);
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: .1em .5em;
+    margin: .1em .3em;
+    box-sizing: border-box;
+}
+span[data-type="tag"]:hover span:nth-child(2) {
+    transform: scale(1.1);
+    box-shadow: 0 0 .5em var(--Watermelon-h-underline-highLight-color);
+}
+
+/* 列表选中的样式 */
+.b3-list-item.b3-list-item--hide-action:hover span:nth-child(2), 
+.b3-list--background .b3-list-item--focus:hover span:nth-child(2),
+.b3-list-item.b3-list-item--hide-action.b3-list-item--focus span:nth-child(2),.b3-list-item.b3-list-item--hide-action.b3-list-item--focus span:nth-child(3),
+.b3-list-item:hover .b3-list-item__text,
+.b3-list-item.b3-list-item--focus span:nth-child(2)
+{
+    font-size: 1.05em;
+    font-weight: bold;
+}
+
+/* 增加沉浸感 */
+.fn__flex.layout-tab-bar, .b3-list__header, .block__title + .fn__space.fn__flex-1, .block__icons, #barSearch + .fn__flex-1, #layouts > .layout__resize, #layouts > .layout__resize::after, .layout-tab-container.fn__flex-1, #toolbar {
+    background-color: var(--Watermelon-Immersive-color);
+}
+.layout-tab-bar .item--focus {
+    background-color: transparent;
+}
+
+/* 增强阴影 */
+.b3-dialog__container {
+    border: .1em solid var(--Watermelon-Immersive-color);
+}
+
+/* 设置及开始界面的选中增强 */
+.b3-list-item.b3-list-item--big:hover,
+.b3-list-item.b3-list-item--big.b3-list-item--focus {
+    font-size: 1.05em;
+    font-weight: bold;
+}
+.layout__empty.b3-list.b3-list--text .b3-list-item.b3-list-item--big:hover {
+    color: var(--Watermelon-highLight-color);
+    font-size: 1.2em;
+}
