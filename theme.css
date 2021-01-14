@@ -134,6 +134,9 @@
 }
 
 /* codeBlock */
+/* .vditor-ir__node.vditor-ir__node--expand .vditor-ir__preview{
+    display: none;
+} */
 .vditor-ir__marker--pre.vditor-ir__marker code {
     background-color: var(--Watermelon-codeBlock-color-input);
 }
@@ -245,7 +248,13 @@
 /* 顶栏美化 */
 #toolbar div, .ft__primary,
 /* 标签 */
-span[data-type="tag"] span:nth-child(2)
+span[data-type="tag"] span:nth-child(2),
+/* 列表的选中 */
+.b3-list-item.b3-list-item--hide-action:hover span:nth-child(2), 
+.b3-list--background .b3-list-item--focus:hover span:nth-child(2),
+.b3-list-item.b3-list-item--hide-action.b3-list-item--focus span:nth-child(2),.b3-list-item.b3-list-item--hide-action.b3-list-item--focus span:nth-child(3),
+.b3-list-item:hover .b3-list-item__text,
+.b3-list-item.b3-list-item--focus span:nth-child(2)
 {
     transition: all .3s linear;
 }
@@ -319,6 +328,7 @@ span[data-type="tag"]:hover span:nth-child(2) {
 {
     font-size: 1.05em;
     font-weight: bold;
+    box-sizing: border-box;
 }
 
 /* 增加沉浸感 */
@@ -343,5 +353,18 @@ span[data-type="tag"]:hover span:nth-child(2) {
 .layout__empty.b3-list.b3-list--text .b3-list-item.b3-list-item--big:hover {
     color: var(--Watermelon-highLight-color);
     font-size: 18px;
+    font-weight: normal;
+}
+
+/* 增强标签等部分列表的样式 */
+.vditor-hint.vditor-panel--left, .vditor-hint.b3-list.b3-list--background {
+    /* border: .1em solid var(--Watermelon-block-border-color); */
+    box-shadow: 0 0 .1em var(--Watermelon-block-border-color), 0px 11px 15px -7px rgba(0, 0, 0, 0.4);
+}
+.b3-list.b3-list--background.vditor-hint.vditor-panel--arrow div button {
+    box-sizing: border-box;
+}
+.b3-list.b3-list--background.vditor-hint.vditor-panel--arrow div:hover button {
+    font-size: 1em;
     font-weight: normal;
 }
