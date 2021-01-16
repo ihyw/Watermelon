@@ -415,3 +415,8 @@ span[data-type="tag"]:hover span:nth-child(2) {
     font-size: 1em;
     font-weight: normal;
 }
+
+/* 标题过长后尾部的白色阴影去除 */
+.layout-tab-bar .item__text::after {
+    background: transparent !important;
+}
