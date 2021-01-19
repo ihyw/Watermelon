@@ -164,7 +164,8 @@
     background-size: .35em .35em;
     background-position: 0 .6em;
     background-repeat: no-repeat;
-    padding-left: 1em;
+    margin-left: -.5em;
+    padding-left: .925em;
 }
 .vditor ol li {
     margin-left: 1em;
