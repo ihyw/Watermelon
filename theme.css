@@ -478,6 +478,9 @@ span[data-type="strong"] strong[style^="text-shadow"] {
 .dock__item.b3-tooltips.b3-tooltips__e:hover svg, .dock__item.b3-tooltips.b3-tooltips__w:hover svg {
     color: var(--Watermelon-highLight-color) !important;
 }
+.dock__item.b3-tooltips.b3-tooltips__e.dock__item--active svg {
+    color: var(--Watermelon-highLight-color);
+}
 #dockLeft, #dockRight {
     background-color: var(--Watermelon-Immersive-color);
 }
