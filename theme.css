@@ -474,7 +474,10 @@ span[data-type="strong"] strong[style^="text-shadow"] {
 .file-tree__header {
     background-color: transparent;
 }
-/* Dock栏高亮 */
+/* Dock栏高亮和颜色 */
 .dock__item.b3-tooltips.b3-tooltips__e:hover svg, .dock__item.b3-tooltips.b3-tooltips__w:hover svg {
     color: var(--Watermelon-highLight-color) !important;
+}
+#dockLeft, #dockRight {
+    background-color: var(--Watermelon-Immersive-color);
 }

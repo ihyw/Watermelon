@@ -4,4 +4,4 @@
 1. Dock栏配色
 
 ## 预览图
-![](https://cdn.jsdelivr.net/gh/ihyw/blogIH-First@main/2021/01/25/Watermelon.png)
+![](https://cdn.jsdelivr.net/gh/ihyw/blogIH-First@main/2021/01/25/Watermelon(1)(1).png)
