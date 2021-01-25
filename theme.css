@@ -133,11 +133,11 @@
     color: var(--Watermelon-h-highLight-color);
     border-bottom-color: var(--Watermelon-h-underline-highLight-color);
 }
-.vditor-ir h2 {
+/* .vditor-ir h2 {
     border-bottom:none;
     background-color: #b6dfd0;
     padding: .2em;
-}
+} */
 
 /* codeBlock */
 .vditor-ir__node.vditor-ir__node--expand .vditor-ir__preview{
@@ -219,7 +219,11 @@
     border: 1.35px solid var(--Watermelon-block-border-color);
     border-radius: 0; 
 }
-
+.block__popover.block__popover--move.block__popover--open .vditor-ir pre, 
+.block__popover, .vditor-ir div[data-type="block-ref-embed"]>div[data-render] .vditor-ir pre,
+.vditor-ir div[data-type="block-query-embed"]>div[data-render] .vditor-ir pre{
+    font-size: 16px !important;
+}
 /* table */
 .vditor-reset table thead tr {
     background-color: var(--Watermelon-table-head-color) !important;
@@ -311,7 +315,9 @@ span[data-type="tag"] span:nth-child(2),
 .b3-list-item.b3-list-item--focus span:nth-child(2),
 /* 对顶部工具栏的美化 */
 .vditor-toolbar__item.b3-tooltips.b3-tooltips__s svg,
-.vditor-toolbar__item.b3-tooltips.b3-tooltips__n svg
+.vditor-toolbar__item.b3-tooltips.b3-tooltips__n svg,
+/* Dock栏的hover动画 */
+.dock__item.b3-tooltips.b3-tooltips__e svg, .dock__item.b3-tooltips.b3-tooltips__w svg
 {
     transition: all .3s linear;
 }
@@ -429,4 +435,46 @@ span[data-type="tag"]:hover span:nth-child(2) {
 /* 标题过长后尾部的白色阴影去除 */
 .layout-tab-bar .item__text::after {
     background: transparent !important;
+}
+
+/* .backlinkList.b3-list.b3-list--background .b3-list-item__text {
+    color: red;
+} */
+
+/* span[data-type="strong"] strong[style^="color"], 
+span[data-type="strong"] strong[style^="background-color"],
+span[data-type="strong"] strong[style^="text-shadow"] {
+    font-weight: normal !important;
+} */
+
+/* .b3-color__square:nth-child(1) {
+    background-color: pink !important;
+} */
+
+/* [fold="1"] {
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid red;
+    animation: ne 3s infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes ne {
+    0% {
+        border-bottom-color: red;
+    }
+    50% {
+        border-bottom-color: blue;
+    }
+    100% {
+        border-bottom-color: red;
+    }
+} */
+
+/* v0.6.7的样式调整 */
+.file-tree__header {
+    background-color: transparent;
+}
+/* Dock栏高亮 */
+.dock__item.b3-tooltips.b3-tooltips__e:hover svg, .dock__item.b3-tooltips.b3-tooltips__w:hover svg {
+    color: var(--Watermelon-highLight-color) !important;
 }
