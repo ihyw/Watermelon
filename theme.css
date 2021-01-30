@@ -553,3 +553,31 @@ body {
 .graph__panel {
     background-color: var(--Watermelon-Immersive-color);
 }
+
+/* 命名优化 */
+.vditor-ir--tip *[tip] {
+    box-sizing: border-box;
+    padding: 0 20px;
+    border-radius: 6px;
+    background: linear-gradient(to right, #b1d5b699,#b7dcbc,#badfbf,#bce2c1,#bfe6c4);
+    box-shadow:  5px 5px 6px #abceb0,
+                 -5px -2px 11px #dfffe4;
+}
+.vditor-ir--tip *[tip]:before {
+    color: #333;
+    font-weight: bold;
+    background: linear-gradient(to right, var(--Watermelon-main-color), var(--Watermelon-Immersive-color));
+    padding: 5px 8px 6px 8px;
+    margin-top: -10px;
+    border-radius: 4px;
+    font-style: italic;
+    /* box-shadow: 0 2px 0 #d3f5d8; */
+    /* border-bottom: 2px solid #d3f5d8; */
+}
+
+/* SQL查询常显 */
+div[data-type='block-query-embed'].vditor-ir__node .vditor-ir__marker:not([data-type='heading-marker']) {
+    color: #9D142090;
+    width: auto; height: auto;
+    display: inline;
+}
