@@ -168,8 +168,14 @@
 }
 
 /* List */
-.vditor ol ul {
-    padding-left: .5em;
+/* .vditor pre > ul > li:first-child {
+    list-style-type: none !important;
+} */
+pre ul, pre ol {
+    margin-left: -1.5em;
+}
+.vditor ol, .vditor ul {
+    padding-left: 1.5em;
 }
 .vditor ol li {
     color: #0000ff80;
@@ -182,12 +188,9 @@
 .vditor ul li {
     color: #0000ff80;
 }
-.vditor ol {
-    padding-left: 1.5em;
-}
 .vditor ul > li {
     list-style-type: disc;
-    margin-left: .6em;
+    margin-left: 1.1em;
 }
 
 /* .vditor ul > li {
@@ -202,7 +205,7 @@
 } */
 .vditor-reset li p {
     margin-bottom: 0;
-    padding: 4px 0;
+    padding: 2px 0;
 }
 .vditor ol > li {
     margin-left: 1.1em;
@@ -636,3 +639,8 @@ body {
 /* .vditor-ir .vditor-ir__node[style=""][data-type="img"], .vditor-ir .vditor-ir__node[data-type="img"]:not([style]) {
     margin-top: 10px;
 } */
+
+/* 设置->快捷键的样式错误修复 */
+.b3-label.file-tree.config-keymap .b3-list-item__graphic.b3-list-item__graphic--arrow {
+    pointer-events: none;
+}
