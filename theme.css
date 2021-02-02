@@ -328,7 +328,11 @@ pre ul, pre ol {
 }
 
 /* 对关闭图标样式的美化 */
-.fn__flex.layout-tab-bar .item svg:hover,
+.fn__flex.layout-tab-bar .item svg:nth-child(3):hover {
+    color: #fff;
+    transform: rotate(180deg);
+}
+
 .b3-dialog__container svg:hover, .b3-snackbar__close.fn__a:hover {
     color: var(--b3-card-error-background);
     transform: rotate(180deg);
