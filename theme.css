@@ -117,9 +117,9 @@
     --Watermelon-h-underline-highLight-color: #99B6D4;
     --Watermelon-block-border-color: #484f49; 
     --Watermelon-prompt-color: var(--Watermelon-highLight-color);
-    --Watermelon-codeBlock-color-input: #BBB5DF;
+    --Watermelon-codeBlock-color-input: #d0d1be;
     /* 404A4B 483C30 */
-    --Watermelon-codeBlock-color: #cad7de;
+    --Watermelon-codeBlock-color: #d0d1be;
     --Watermelon-table-border-color: var(--Watermelon-block-border-color);
     --Watermelon-table-head-color: #BBB5DF;
     --Watermelon-table-body-color: #cad7de;
@@ -171,6 +171,12 @@
 /* .vditor pre > ul > li:first-child {
     list-style-type: none !important;
 } */
+.vditor div[style$="left:-22px"]:not([title^="段落"]):not([title^="列表项"]) {
+    margin-left: -3em;
+}
+.vditor ul[tip], .vditor ol[tip] {
+    border: none;
+}
 pre ul, pre ol {
     margin-left: -1.5em;
 }
@@ -626,6 +632,9 @@ body {
     /* box-shadow: 0 2px 0 #d3f5d8; */
     /* border-bottom: 2px solid #d3f5d8; */
 }
+.vditor ul[tip], .vditor ol[tip] {
+    margin-left: 0;
+}
 
 /* SQL查询常显 */
 /* div[data-type='block-query-embed'].vditor-ir__node .vditor-ir__marker:not([data-type='heading-marker']) {
@@ -648,3 +657,13 @@ body {
 .b3-label.file-tree.config-keymap .b3-list-item__graphic.b3-list-item__graphic--arrow {
     pointer-events: none;
 }
+
+/* 标签文字显示 */
+/* circle[fill="var(--b3-graph-tag-point)"] + text {
+    display: block;
+} */
+
+/* strong[style^="color"], strong[style^="background-image"] {
+    font-weight: normal !important;
+    font-family: monospace;
+} */
