@@ -684,3 +684,42 @@ body {
     font-weight: normal !important;
     font-family: monospace;
 } */
+
+/* 任务列表样式 */
+.vditor-task p {
+    transition: all .1s linear;
+}
+.vditor-task.vditor-task--done > p {
+    color: #8c2b30;
+    text-decoration: line-through;
+}
+.vditor-task input {
+    width: 1em;
+    height: 1em;
+    cursor: pointer;
+}
+.vditor-task::marker {
+    content: '';
+    display: none;
+}
+.vditor-task input {
+    -webkit-appearance: none !important;
+    background: no-repeat url("./checkbox.png");
+    position: relative; left: .1em;
+    background-size: 1.15em 2em;
+    background-position-y: -.04em;
+    transition: all linear .1s;
+    font-weight: bold;
+    transform: scale(2);
+}
+.vditor-task.vditor-task--done input {
+    -webkit-appearance: none !important;
+    list-style-type: none !important;
+    border-radius: 2px;
+    transition: all linear .1s;
+    background: no-repeat var(--Watermelon-main-color) url("./checkbox.png");
+    background-size: 1.15em 2em;
+}
+.vditor-task.vditor-task--done input:checked {
+    background-position-y: -.9em;
+}
