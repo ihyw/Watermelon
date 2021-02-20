@@ -707,7 +707,6 @@ body {
     background: no-repeat var(--Watermelon-main-color) url("./checkbox.png");
     position: relative; left: .1em;
     background-size: 1.15em 2em;
-    background-position-y: -.04em;
     transition: all linear .1s;
     font-weight: bold;
     transform: scale(2);
