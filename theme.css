@@ -303,6 +303,9 @@ pre ul, pre ol {
 } */
 
 /* blockRef */
+.vditor .vditor-ir__blockref {
+    color: #ff0000;
+}
 .block__popover, .vditor-ir div[data-type="block-ref-embed"]>div[data-render], .vditor-ir div[data-type="block-query-embed"]>div[data-render] {
     border: 1.35px solid var(--Watermelon-block-border-color);
     border-radius: 0; 
@@ -312,6 +315,7 @@ pre ul, pre ol {
 .vditor-ir div[data-type="block-query-embed"]>div[data-render] .vditor-ir pre{
     font-size: 16px !important;
 }
+
 /* table */
 .vditor-reset table thead tr {
     background-color: var(--Watermelon-table-head-color) !important;
